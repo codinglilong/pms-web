@@ -394,6 +394,11 @@
 .sidebar-mini .card-detailed-icon span.blue {
   background-color: #00B6FF;
 }
+.sidebar-mini .card-detailed-icon .progress {
+  width: 63px;
+  height: 63px;
+  position: relative;
+}
 .sidebar-mini .card-detailed-info {
   width: 50%;
   text-align: center;
