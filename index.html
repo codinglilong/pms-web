@@ -8,6 +8,7 @@
   <title>凯望网络科技养老管理系统</title>
   <!-- Bootstrap -->
   <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./dist/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="./dist/css/common.css">
   <link rel="stylesheet" href="./dist/css/common/index.css">
   <link rel="stylesheet" href="./dist/css/style.css">
@@ -271,6 +272,7 @@
       </section>
     </aside>
     <!-- 左侧滑动菜单结束 -->
+
     <!-- 中间内容开始 -->
     <div class="content-wrapper">
       <div class="row">
@@ -283,22 +285,26 @@
             </div>
             <div class="box">
               <div class="row">
-
                 <div class="col-md-3">
-                  <div class="card-detailed">
+                  <div class="card-detailed blue">
                     <div class="card-detailed-icon">
-
-                      <div class="progress">
-                        <div class="left"></div>
-                        <div class="right"></div>
-                        <div class="mask">
-                          <label>3.95%</label>
-                        </div>
-                      </div>
-
+                      <canvas width="63" height="63" id="canvas_01"></canvas>
                     </div>
                     <div class="card-detailed-info">
-                      <span class="count">222</span>
+                      <span class="count">3.95%</span>
+                      <br />
+                      <span class="desc">入住率</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="card-detailed blue">
+                    <div class="card-detailed-icon">
+                      <span><img src="./dist/img/common/yntj-icon01.png" /></span>
+                    </div>
+                    <div class="card-detailed-info">
+                      <span class="count">253</span>
                       <br />
                       <span class="desc">总床位</span>
                     </div>
@@ -306,40 +312,27 @@
                 </div>
 
                 <div class="col-md-3">
-                  <div class="card-detailed">
+                  <div class="card-detailed blue">
                     <div class="card-detailed-icon">
-                      <span class="blue"></span>
+                      <span><img src="./dist/img/common/yntj-icon02.png" /></span>
                     </div>
                     <div class="card-detailed-info">
-                      <span class="count">222</span>
+                      <span class="count">232</span>
                       <br />
-                      <span class="desc">总床位</span>
+                      <span class="desc">空床位</span>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-md-3">
-                  <div class="card-detailed">
+                  <div class="card-detailed blue">
                     <div class="card-detailed-icon">
-                      <span class="blue"></span>
+                      <span><img src="./dist/img/common/yntj-icon03.png" /></span>
                     </div>
                     <div class="card-detailed-info">
-                      <span class="count">222</span>
+                      <span class="count">10</span>
                       <br />
-                      <span class="desc">总床位</span>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-md-3">
-                  <div class="card-detailed">
-                    <div class="card-detailed-icon">
-                      <span class="blue"></span>
-                    </div>
-                    <div class="card-detailed-info">
-                      <span class="count">222</span>
-                      <br />
-                      <span class="desc">总床位</span>
+                      <span class="desc">护工数</span>
                     </div>
                   </div>
                 </div>
@@ -347,51 +340,51 @@
 
               <div class="row">
                 <div class="col-md-3">
-                  <div class="card-detailed">
+                  <div class="card-detailed blue">
                     <div class="card-detailed-icon">
-                      <span class="blue"></span>
+                      <span><img src="./dist/img/common/yntj-icon04.png" /></span>
                     </div>
                     <div class="card-detailed-info">
-                      <span class="count">222</span>
+                      <span class="count">100</span>
                       <br />
-                      <span class="desc">总床位</span>
+                      <span class="desc">总入住数</span>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-3">
-                  <div class="card-detailed">
+                  <div class="card-detailed blue">
                     <div class="card-detailed-icon">
-                      <span class="blue"></span>
+                      <span><img src="./dist/img/common/yntj-icon05.png" /></span>
                     </div>
                     <div class="card-detailed-info">
-                      <span class="count">222</span>
+                      <span class="count">60</span>
                       <br />
-                      <span class="desc">总床位</span>
+                      <span class="desc">长住</span>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-3">
-                  <div class="card-detailed">
+                  <div class="card-detailed blue">
                     <div class="card-detailed-icon">
-                      <span class="blue"></span>
+                      <span><img src="./dist/img/common/yntj-icon06.png" /></span>
                     </div>
                     <div class="card-detailed-info">
-                      <span class="count">222</span>
+                      <span class="count">30</span>
                       <br />
-                      <span class="desc">总床位</span>
+                      <span class="desc">短住</span>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-md-3">
-                  <div class="card-detailed">
+                  <div class="card-detailed blue">
                     <div class="card-detailed-icon">
-                      <span class="blue"></span>
+                      <span><img src="./dist/img/common/yntj-icon07.png" /></span>
                     </div>
                     <div class="card-detailed-info">
-                      <span class="count">222</span>
+                      <span class="count">10</span>
                       <br />
-                      <span class="desc">总床位</span>
+                      <span class="desc">试住</span>
                     </div>
                   </div>
                 </div>
@@ -399,51 +392,51 @@
 
               <div class="row">
                 <div class="col-md-3">
-                  <div class="card-detailed">
+                  <div class="card-detailed blue">
                     <div class="card-detailed-icon">
-                      <span class="blue"></span>
+                      <canvas width="63" height="63" id="canvas_02"></canvas>
                     </div>
                     <div class="card-detailed-info">
-                      <span class="count">222</span>
+                      <span class="count">20%</span>
                       <br />
-                      <span class="desc">总床位</span>
+                      <span class="desc">咨询转入住率</span>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-3">
-                  <div class="card-detailed">
+                  <div class="card-detailed blue">
                     <div class="card-detailed-icon">
-                      <span class="blue"></span>
+                      <span><img src="./dist/img/common/yntj-icon08.png" /></span>
                     </div>
                     <div class="card-detailed-info">
-                      <span class="count">222</span>
+                      <span class="count">15</span>
                       <br />
-                      <span class="desc">总床位</span>
+                      <span class="desc">咨询</span>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-3">
-                  <div class="card-detailed">
+                  <div class="card-detailed blue">
                     <div class="card-detailed-icon">
-                      <span class="blue"></span>
+                      <span><img src="./dist/img/common/yntj-icon09.png" /></span>
                     </div>
                     <div class="card-detailed-info">
-                      <span class="count">222</span>
+                      <span class="count">3</span>
                       <br />
-                      <span class="desc">总床位</span>
+                      <span class="desc">咨询转入住</span>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-md-3">
-                  <div class="card-detailed">
+                  <div class="card-detailed blue">
                     <div class="card-detailed-icon">
-                      <span class="blue"></span>
+                      <span><img src="./dist/img/common/yntj-icon10.png" /></span>
                     </div>
                     <div class="card-detailed-info">
-                      <span class="count">222</span>
+                      <span class="count">5</span>
                       <br />
-                      <span class="desc">总床位</span>
+                      <span class="desc">咨询转预约</span>
                     </div>
                   </div>
                 </div>
@@ -451,51 +444,51 @@
 
               <div class="row">
                 <div class="col-md-3">
-                  <div class="card-detailed">
+                  <div class="card-detailed blue">
                     <div class="card-detailed-icon">
-                      <span class="blue"></span>
+                      <canvas width="63" height="63" id="canvas_03"></canvas>
                     </div>
                     <div class="card-detailed-info">
-                      <span class="count">222</span>
+                      <span class="count">0%</span>
                       <br />
-                      <span class="desc">总床位</span>
+                      <span class="desc">预约转入住率</span>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-3">
-                  <div class="card-detailed">
+                  <div class="card-detailed blue">
                     <div class="card-detailed-icon">
-                      <span class="blue"></span>
+                      <span><img src="./dist/img/common/yntj-icon11.png" /></span>
                     </div>
                     <div class="card-detailed-info">
-                      <span class="count">222</span>
+                      <span class="count">1</span>
                       <br />
-                      <span class="desc">总床位</span>
+                      <span class="desc">预约</span>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-3">
-                  <div class="card-detailed">
+                  <div class="card-detailed blue">
                     <div class="card-detailed-icon">
-                      <span class="blue"></span>
+                      <span><img src="./dist/img/common/yntj-icon12.png" /></span>
                     </div>
                     <div class="card-detailed-info">
-                      <span class="count">222</span>
+                      <span class="count">0</span>
                       <br />
-                      <span class="desc">总床位</span>
+                      <span class="desc">预约转入住</span>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-md-3">
-                  <div class="card-detailed">
+                  <div class="card-detailed blue">
                     <div class="card-detailed-icon">
-                      <span class="blue"></span>
+                      <span><img src="./dist/img/common/yntj-icon13.png" /></span>
                     </div>
                     <div class="card-detailed-info">
-                      <span class="count">222</span>
+                      <span class="count">1</span>
                       <br />
-                      <span class="desc">总床位</span>
+                      <span class="desc">退住</span>
                     </div>
                   </div>
                 </div>
@@ -508,58 +501,31 @@
           <div class="card">
             <div class="top">
               <div class="title">
-                院内统计
+                今日动态
               </div>
-
             </div>
 
             <div class="box">
               <div class="row">
                 <div class="col-md-6">
-                  <div class="card-detailed">
+                  <div class="card-detailed green">
                     <div class="card-detailed-icon">
-                      <span class="blue"></span>
+                      <span><img src="./dist/img/common/jrdt-icon01.png" /></span>
                     </div>
                     <div class="card-detailed-info">
-                      <span class="count">222</span>
+                      <span class="count">16</span>
                       <br />
-                      <span class="desc">总床位</span>
+                      <span class="desc">今日咨询</span>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="card-detailed">
+                  <div class="card-detailed blue-01">
                     <div class="card-detailed-icon">
-                      <span class="blue"></span>
+                      <span><img src="./dist/img/common/jrdt-icon02.png" /></span>
                     </div>
                     <div class="card-detailed-info">
-                      <span class="count">222</span>
-                      <br />
-                      <span class="desc">总床位</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="card-detailed">
-                    <div class="card-detailed-icon">
-                      <span class="blue"></span>
-                    </div>
-                    <div class="card-detailed-info">
-                      <span class="count">222</span>
-                      <br />
-                      <span class="desc">总床位</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="card-detailed">
-                    <div class="card-detailed-icon">
-                      <span class="blue"></span>
-                    </div>
-                    <div class="card-detailed-info">
-                      <span class="count">222</span>
+                      <span class="count">7</span>
                       <br />
                       <span class="desc">总床位</span>
                     </div>
@@ -568,52 +534,78 @@
               </div>
               <div class="row">
                 <div class="col-md-6">
-                  <div class="card-detailed">
+                  <div class="card-detailed red">
                     <div class="card-detailed-icon">
-                      <span class="blue"></span>
+                      <span><img src="./dist/img/common/jrdt-icon03.png" /></span>
                     </div>
                     <div class="card-detailed-info">
-                      <span class="count">222</span>
+                      <span class="count">8</span>
                       <br />
-                      <span class="desc">总床位</span>
+                      <span class="desc">今日入住</span>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="card-detailed">
+                  <div class="card-detailed brown">
                     <div class="card-detailed-icon">
-                      <span class="blue"></span>
+                      <span><img src="./dist/img/common/jrdt-icon04.png" /></span>
                     </div>
                     <div class="card-detailed-info">
-                      <span class="count">222</span>
+                      <span class="count">4</span>
                       <br />
-                      <span class="desc">总床位</span>
+                      <span class="desc">今日请假中</span>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-6">
-                  <div class="card-detailed">
+                  <div class="card-detailed purple">
                     <div class="card-detailed-icon">
-                      <span class="blue"></span>
+                      <span><img src="./dist/img/common/jrdt-icon05.png" /></span>
                     </div>
                     <div class="card-detailed-info">
-                      <span class="count">222</span>
+                      <span class="count">1</span>
                       <br />
-                      <span class="desc">总床位</span>
+                      <span class="desc">今日事故</span>
                     </div>
                   </div>
                 </div>
                 <div class="col-md-6">
-                  <div class="card-detailed">
+                  <div class="card-detailed red-01">
                     <div class="card-detailed-icon">
-                      <span class="blue"></span>
+                      <span><img src="./dist/img/common/jrdt-icon06.png" /></span>
                     </div>
                     <div class="card-detailed-info">
-                      <span class="count">222</span>
+                      <span class="count">0</span>
                       <br />
-                      <span class="desc">总床位</span>
+                      <span class="desc">今日投诉</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="card-detailed yellow">
+                    <div class="card-detailed-icon">
+                      <span><img src="./dist/img/common/jrdt-icon07.png" /></span>
+                    </div>
+                    <div class="card-detailed-info">
+                      <span class="count">19</span>
+                      <br />
+                      <span class="desc">今日入库</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card-detailed blue-02">
+                    <div class="card-detailed-icon">
+                      <span><img src="./dist/img/common/jrdt-icon08.png" /></span>
+                    </div>
+                    <div class="card-detailed-info">
+                      <span class="count">5</span>
+                      <br />
+                      <span class="desc">今日出库</span>
                     </div>
                   </div>
                 </div>
@@ -622,175 +614,278 @@
           </div>
         </div>
       </div>
+      <div class="row mt-26">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="top">
+              <div class="title">
+                最近通知公告
+              </div>
+            </div>
+            <div class="box news">
+              <ul>
+                <li>
+                  <a href="#">
+                    <span class="title">
+                      此处填写相关通知公告信息此处填写相关通知公告此处填写相关通知公告信息此处填写相关通知公告此处填写相关通知公告信息此处填写相关通知公告
+                    </span>
+                    <span class="time">12-28</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="title">
+                      此处填写相关通知公告信息此处填写相关通知公告此处填写相关通知公告信息此处填写相关通知公告此处填写相关通知公告信息此处填写相关通知公告
+                    </span>
+                    <span class="time">12-28</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="title">
+                      此处填写相关通知公告信息此处填写相关通知公告此处填写相关通知公告信息此处填写相关通知公告此处填写相关通知公告信息此处填写相关通知公告
+                    </span>
+                    <span class="time">12-28</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="title">
+                      此处填写相关通知公告信息此处填写相关通知公告此处填写相关通知公告信息此处填写相关通知公告此处填写相关通知公告信息此处填写相关通知公告
+                    </span>
+                    <span class="time">12-28</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="top">
+              <div class="title">
+                最近工作交流论坛帖子
+              </div>
+            </div>
 
+            <div class="box news">
+              <ul>
+                <li>
+                  <a href="#">
+                    <span class="title">
+                      此处填写相关通知公告信息此处填写相关通知公告此处填写相关通知公告信息此处填写相关通知公告此处填写相关通知公告信息此处填写相关通知公告
+                    </span>
+                    <span class="time">12-28</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="title">
+                      此处填写相关通知公告信息此处填写相关通知公告此处填写相关通知公告信息此处填写相关通知公告此处填写相关通知公告信息此处填写相关通知公告
+                    </span>
+                    <span class="time">12-28</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="title">
+                      此处填写相关通知公告信息此处填写相关通知公告此处填写相关通知公告信息此处填写相关通知公告此处填写相关通知公告信息此处填写相关通知公告
+                    </span>
+                    <span class="time">12-28</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <span class="title">
+                      此处填写相关通知公告信息此处填写相关通知公告此处填写相关通知公告信息此处填写相关通知公告此处填写相关通知公告信息此处填写相关通知公告
+                    </span>
+                    <span class="time">12-28</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="top">
+              <div class="title">
+                最近问卷调查
+              </div>
+            </div>
+            <div class="box news">
+              <ul>
+                <li>
+                  <span class="title">
+                    <img src="./dist/img/common/tj-icon.png" />
+                    &nbsp;<a href="#" class="a-blue">【查看统计】</a>&nbsp;
+                    <a href="#">此处填写相关通知公告信息此处填写相关通知公告此处填写相关通知公告信息此处填写相关通知公告此处填写相关通知公告信息此处填写相关通知公告</a>
+                  </span>
+                  <span class="time">12-28</span>
 
+                </li>
+                <li>
+                  <span class="title">
+                    <img src="./dist/img/common/tj-icon.png" />
+                    &nbsp;<a href="#" class="a-blue">【查看统计】</a>&nbsp;
+                    <a href="#">此处填写相关通知公告信息此处填写相关通知公告此处填写相关通知公告信息此处填写相关通知公告此处填写相关通知公告信息此处填写相关通知公告</a>
+                  </span>
+                  <span class="time">12-28</span>
 
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
-      <p>
-        fdsafdsa
-      </p>
+                </li>
+                <li>
+                  <span class="title">
+                    <img src="./dist/img/common/tj-icon.png" />
+                    &nbsp;<a href="#" class="a-blue">【查看统计】</a>&nbsp;
+                    <a href="#">此处填写相关通知公告信息此处填写相关通知公告此处填写相关通知公告信息此处填写相关通知公告此处填写相关通知公告信息此处填写相关通知公告</a>
+                  </span>
+                  <span class="time">12-28</span>
+
+                </li>
+                <li>
+                  <span class="title">
+                    <img src="./dist/img/common/tj-icon.png" />
+                    &nbsp;<a href="#" class="a-blue">【查看统计】</a>&nbsp;
+                    <a href="#">此处填写相关通知公告信息此处填写相关通知公告此处填写相关通知公告信息此处填写相关通知公告此处填写相关通知公告信息此处填写相关通知公告</a>
+                  </span>
+                  <span class="time">12-28</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-26">
+
+        <div class="card">
+          <div class="top">
+            <div class="title">
+              最近通知公告
+            </div>
+          </div>
+
+          <div class="box sw">
+            <!-- Swiper -->
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide p-card">
+                  <img src="./dist/img/common/lrsr-pic.jpg" alt="图片">
+                  <div class="p-card-info">
+                    <div class="name">陈荟娟&nbsp;&nbsp;65周岁</div>
+                    <div class="birt">1955-01-19</div>
+                    <div class="address">东煌楼-125</div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide p-card">
+                  <img src="./dist/img/common/lrsr-pic.jpg" alt="图片">
+                  <div class="p-card-info">
+                    <div class="name">陈荟娟&nbsp;&nbsp;65周岁</div>
+                    <div class="birt">1955-01-19</div>
+                    <div class="address">东煌楼-125</div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide p-card">
+                  <img src="./dist/img/common/lrsr-pic.jpg" alt="图片">
+                  <div class="p-card-info">
+                    <div class="name">陈荟娟&nbsp;&nbsp;65周岁</div>
+                    <div class="birt">1955-01-19</div>
+                    <div class="address">东煌楼-125</div>
+                  </div>
+                </div>
+                <div class="swiper-slide p-card">
+                  <img src="./dist/img/common/lrsr-pic.jpg" alt="图片">
+                  <div class="p-card-info">
+                    <div class="name">陈荟娟&nbsp;&nbsp;65周岁</div>
+                    <div class="birt">1955-01-19</div>
+                    <div class="address">东煌楼-125</div>
+                  </div>
+                </div>
+                <div class="swiper-slide p-card">
+                  <img src="./dist/img/common/lrsr-pic.jpg" alt="图片">
+                  <div class="p-card-info">
+                    <div class="name">陈荟娟&nbsp;&nbsp;65周岁</div>
+                    <div class="birt">1955-01-19</div>
+                    <div class="address">东煌楼-125</div>
+                  </div>
+                </div>
+                <div class="swiper-slide p-card">
+                  <img src="./dist/img/common/lrsr-pic.jpg" alt="图片">
+                  <div class="p-card-info">
+                    <div class="name">陈荟娟&nbsp;&nbsp;65周岁</div>
+                    <div class="birt">1955-01-19</div>
+                    <div class="address">东煌楼-125</div>
+                  </div>
+                </div>
+                <div class="swiper-slide p-card">
+                  <img src="./dist/img/common/lrsr-pic.jpg" alt="图片">
+                  <div class="p-card-info">
+                    <div class="name">陈荟娟&nbsp;&nbsp;65周岁</div>
+                    <div class="birt">1955-01-19</div>
+                    <div class="address">东煌楼-125</div>
+                  </div>
+                </div>
+                <div class="swiper-slide p-card">
+                  <img src="./dist/img/common/lrsr-pic.jpg" alt="图片">
+                  <div class="p-card-info">
+                    <div class="name">陈荟娟&nbsp;&nbsp;65周岁</div>
+                    <div class="birt">1955-01-19</div>
+                    <div class="address">东煌楼-125</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="navigation">
+              <div class="button-next">
+                <i class="glyphicon glyphicon-menu-left"></i>
+              </div>
+              <div class="button-prev">
+                <i class="glyphicon glyphicon-menu-right"></i>
+              </div>
+            </div>
+            <!-- Swiper -->
+          </div>
+
+        </div>
+
+      </div>
     </div>
   </div>
   <!-- 中间内容结束 -->
   <!-- jQuery -->
-  <script src="../dist/js/jquery.min.js"></script>
-  <script src="../bootstrap/js/bootstrap.min.js"></script>
-  <script src="../dist/js/ovio.js"></script>
+  <script src="./dist/js/jquery.min.js"></script>
+  <script src="./bootstrap/js/bootstrap.min.js"></script>
+  <script src="./dist/js/swiper-bundle.min.js"></script>
+  <script src="./dist/js/ovio.js"></script>
+  <script src="./dist/js/encapsulation_class.js"></script>
+  <script>
+    new EnableCircle({
+      id: 'canvas_01',
+      value: 3.95,
+      target: 'primary',
+    })
+    new EnableCircle({
+      id: 'canvas_02',
+      value: 20,
+      target: 'primary',
+    })
+    new EnableCircle({
+      id: 'canvas_03',
+      value: 0,
+      target: 'primary',
+    })
+    new Swiper('.swiper-container', {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: '.button-prev',
+        prevEl: '.button-next',
+      },
+    });
+  </script>
 </body>
 
 </html>

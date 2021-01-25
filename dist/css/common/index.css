@@ -1,3 +1,10 @@
+.mt-26 {
+  margin-top: 26px;
+}
+.sidebar-mini .wrapper {
+  min-height: 100vh !important;
+  background-color: #F2F2F2;
+}
 .sidebar-mini .wrapper header {
   display: flex;
   height: 60px;
@@ -376,6 +383,61 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  cursor: pointer;
+}
+.sidebar-mini .card-detailed.blue .card-detailed-icon span {
+  background-color: #00B6FF;
+}
+.sidebar-mini .card-detailed.blue .count {
+  color: #00B6FF;
+}
+.sidebar-mini .card-detailed.green .card-detailed-icon span {
+  background-color: #4BD675;
+}
+.sidebar-mini .card-detailed.green .count {
+  color: #4BD675;
+}
+.sidebar-mini .card-detailed.blue-01 .card-detailed-icon span {
+  background-color: #3B6CFF;
+}
+.sidebar-mini .card-detailed.blue-01 .count {
+  color: #3B6CFF;
+}
+.sidebar-mini .card-detailed.red .card-detailed-icon span {
+  background-color: #FF7558;
+}
+.sidebar-mini .card-detailed.red .count {
+  color: #FF7558;
+}
+.sidebar-mini .card-detailed.brown .card-detailed-icon span {
+  background-color: #B08555;
+}
+.sidebar-mini .card-detailed.brown .count {
+  color: #B08555;
+}
+.sidebar-mini .card-detailed.purple .card-detailed-icon span {
+  background-color: #BC71FF;
+}
+.sidebar-mini .card-detailed.purple .count {
+  color: #BC71FF;
+}
+.sidebar-mini .card-detailed.red-01 .card-detailed-icon span {
+  background-color: #FF4D69;
+}
+.sidebar-mini .card-detailed.red-01 .count {
+  color: #FF4D69;
+}
+.sidebar-mini .card-detailed.yellow .card-detailed-icon span {
+  background-color: #FFA53A;
+}
+.sidebar-mini .card-detailed.yellow .count {
+  color: #FFA53A;
+}
+.sidebar-mini .card-detailed.blue-02 .card-detailed-icon span {
+  background-color: #5DD0FC;
+}
+.sidebar-mini .card-detailed.blue-02 .count {
+  color: #5DD0FC;
 }
 .sidebar-mini .card-detailed-icon {
   width: 50%;
@@ -390,9 +452,6 @@
   border-radius: 50%;
   text-align: center;
   line-height: 63px;
-}
-.sidebar-mini .card-detailed-icon span.blue {
-  background-color: #00B6FF;
 }
 .sidebar-mini .card-detailed-icon .progress {
   width: 63px;
@@ -417,6 +476,100 @@
   font-size: 14px;
   font-weight: 400;
   color: #282B33;
+}
+.sidebar-mini .news {
+  padding-top: 15px !important;
+  padding-bottom: 5px !important;
+}
+.sidebar-mini .news a,
+.sidebar-mini .news a:hover,
+.sidebar-mini .news a:focus,
+.sidebar-mini .news a:active,
+.sidebar-mini .news a:link {
+  font-size: 14px;
+  font-weight: 400;
+  color: #767676;
+}
+.sidebar-mini .news .a-blue,
+.sidebar-mini .news .a-blue:hover {
+  color: #2E69EB;
+}
+.sidebar-mini .news ul {
+  padding: 0;
+  list-style: none;
+}
+.sidebar-mini .news ul li {
+  position: relative;
+  line-height: 25px;
+}
+.sidebar-mini .news ul li .title {
+  display: inline-block;
+  width: 70%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-break: break-all;
+}
+.sidebar-mini .news ul li .time {
+  position: absolute;
+  right: 0;
+}
+.sidebar-mini .sw {
+  padding-right: 200px !important;
+  padding-top: 14px !important;
+  padding-bottom: 14px !important;
+  position: relative;
+}
+.sidebar-mini .sw .navigation {
+  position: absolute;
+  right: 0;
+  width: 200px;
+  height: 100%;
+  z-index: 2;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sidebar-mini .sw .navigation div {
+  width: 42px;
+  height: 30px;
+  background-color: #5E5E5E;
+  text-align: center;
+  line-height: 30px;
+  color: #ffffff;
+}
+.sidebar-mini .sw .navigation div:focus {
+  border: none;
+  outline: none;
+}
+.sidebar-mini .sw .navigation div.swiper-button-disabled {
+  background-color: #ADAAAA;
+}
+.sidebar-mini .sw .p-card {
+  border: 1px solid #EBEBEB;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  line-height: 30px;
+}
+.sidebar-mini .sw .p-card img {
+  border-radius: 8px;
+}
+.sidebar-mini .sw .p-card .name {
+  font-size: 20px;
+  font-weight: 400;
+  color: #363636;
+}
+.sidebar-mini .sw .p-card .birt,
+.sidebar-mini .sw .p-card .address {
+  font-size: 18px;
+  font-weight: 400;
+  color: #7F7F7F;
+}
+.sidebar-mini .sw .p-card .address {
+  font-size: 16px;
 }
 .icon-arrow {
   display: inline-block;
