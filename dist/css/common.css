@@ -1,0 +1,29 @@
+/* Layout */
+html, body {
+	height: 100%;
+}
+body {
+	font-family: Microsoft YaHei;
+	overflow-x: hidden;
+	overflow-y: auto;
+	font-size: 13px;
+}
+a {
+	color: #4a90e2;
+	transition: all 0.3s ease-out 0s;
+}
+a:hover, a:active, a:focus {
+	outline: none;
+	text-decoration: none;
+	transition: all 0.3s ease-out 0s;
+}
+
+footer{
+  text-align: center;
+  font-size: 14px;
+  font-family: SimSun;
+  font-weight: 400;
+  color: #000000;
+  line-height: 30px;
+  margin-top: 40px;
+}
