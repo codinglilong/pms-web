@@ -278,6 +278,7 @@
     <div class="content-wrapper">
       <div class="bread">
         当前位置：<a href="#">居住管理</a>&nbsp;>&nbsp;<a href="#">入住办理</a>
+        <span>隐藏查询条件</span>
       </div>
       <div class="input-list">
         <form class="form-inline">
@@ -331,16 +332,338 @@
               <input type="text" class="input-text">
             </div>
             <div class="col">
+              <!-- <div> -->
               <label>入住日期：</label>
               <div class="input-group date" data-provide="datepicker">
                 <input type="text" class="input-text">
                 <div class="input-group-addon">
-                  <i class="glyphicon glyphicon-th"></i>
+                  <i class="glyphicon glyphicon-calendar"></i>
+                </div>
+              </div>
+              至
+              <div class="input-group date" data-provide="datepicker">
+                <input type="text" class="input-text">
+                <div class="input-group-addon">
+                  <i class="glyphicon glyphicon-calendar"></i>
                 </div>
               </div>
             </div>
           </div>
+          <div class="formbtn-list">
+            <button class="formbtn formbtn-primary" type="submit">查询</button>
+            <button class="formbtn" type="reset">重置</button>
+            <button class="formbtn formbtn-primary right">导出Excel</button>
+          </div>
         </form>
+      </div>
+      <div class="check-list">
+        <div class="header">
+          请选择需要导出Excel的字段：
+        </div>
+        <div class="check-box">
+          <label>
+            <input type="checkbox"> 入住单号
+          </label>
+          <label>
+            <input type="checkbox"> 老人编号
+          </label>
+          <label>
+            <input type="checkbox"> 姓名
+          </label>
+          <label>
+            <input type="checkbox"> 性别
+          </label>
+          <label>
+            <input type="checkbox"> 出生日期
+          </label>
+          <label>
+            <input type="checkbox"> 手机号码
+          </label>
+          <label>
+            <input type="checkbox"> 办理类型
+          </label>
+          <label>
+            <input type="checkbox"> 合同开始日期
+          </label>
+          <label>
+            <input type="checkbox"> 合同结束日期
+          </label>
+          <label>
+            <input type="checkbox"> 护理等级
+          </label>
+          <label>
+            <input type="checkbox"> 床位号
+          </label>
+          <label>
+            <input type="checkbox"> 入住日期
+          </label>
+          <label>
+            <input type="checkbox"> 计费开始日期
+          </label>
+          <label>
+            <input type="checkbox"> 首次收费截止日期
+          </label>
+          <label>
+            <input type="checkbox"> 居住状态
+          </label>
+          <label>
+            <input type="checkbox"> 审核人姓名
+          </label>
+          <label>
+            <input type="checkbox"> 审核人时间
+          </label>
+          <label>
+            <input type="checkbox"> 备注
+          </label>
+        </div>
+        <div class="formbtn-list">
+          <button class="formbtn formbtn-primary" type="submit">导出Excel确认</button>
+          <button class="formbtn" type="reset">取消</button>
+        </div>
+      </div>
+      <div class="content-table">
+        <button class="formbtn formbtn-primary" data-toggle="modal" data-target="#addModal">新增</button>
+        <div class="table">
+          <table>
+            <thead>
+              <tr>
+                <th>序号</th>
+                <th>入住单号</th>
+                <th>老人编号</th>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>办理类型</th>
+                <th>入住日期</th>
+                <th>合同结束日期</th>
+                <th>护理等级</th>
+                <th>床位号</th>
+                <th>居住状态</th>
+                <th>审核日期</th>
+                <th>审核</th>
+                <th>修改</th>
+                <th>删除</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>RZ210001</td>
+                <td>LR200034</td>
+                <td>顾如意</td>
+                <td>女</td>
+                <td>长住</td>
+                <td>2021-01-08</td>
+                <td>2026-01-31</td>
+                <td>自理B级</td>
+                <td>旭日楼-1楼-104-1</td>
+                <td>未入住</td>
+                <td>2020-12-20</td>
+                <td><img src="./dist/img/common/sh-icon.png" /></td>
+                <td><img src="./dist/img/common/xg-icon.png" /></td>
+                <td><img src="./dist/img/common/sc-icon.png" /></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>RZ210001</td>
+                <td>LR200034</td>
+                <td>顾如意</td>
+                <td>女</td>
+                <td>长住</td>
+                <td>2021-01-08</td>
+                <td>2026-01-31</td>
+                <td>自理B级</td>
+                <td>旭日楼-1楼-104-1</td>
+                <td>未入住</td>
+                <td>2020-12-20</td>
+                <td><img src="./dist/img/common/sh-icon.png" /></td>
+                <td><img src="./dist/img/common/xg-icon.png" /></td>
+                <td><img src="./dist/img/common/sc-icon.png" /></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>RZ210001</td>
+                <td>LR200034</td>
+                <td>顾如意</td>
+                <td>女</td>
+                <td>长住</td>
+                <td>2021-01-08</td>
+                <td>2026-01-31</td>
+                <td>自理B级</td>
+                <td>旭日楼-1楼-104-1</td>
+                <td>未入住</td>
+                <td>2020-12-20</td>
+                <td><img src="./dist/img/common/sh-icon.png" /></td>
+                <td><img src="./dist/img/common/xg-icon.png" /></td>
+                <td><img src="./dist/img/common/sc-icon.png" /></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>RZ210001</td>
+                <td>LR200034</td>
+                <td>顾如意</td>
+                <td>女</td>
+                <td>长住</td>
+                <td>2021-01-08</td>
+                <td>2026-01-31</td>
+                <td>自理B级</td>
+                <td>旭日楼-1楼-104-1</td>
+                <td>未入住</td>
+                <td>2020-12-20</td>
+                <td><img src="./dist/img/common/sh-icon.png" /></td>
+                <td><img src="./dist/img/common/xg-icon.png" /></td>
+                <td><img src="./dist/img/common/sc-icon.png" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="pagination">
+          <ul>
+            <li class="disabled">首页</li>
+            <li class="disabled">上一页</li>
+            <li class="active">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>下一页</li>
+            <li>尾页</li>
+          </ul>
+          <div class="pagination-jump">
+            <span>共10页</span>&nbsp;&nbsp;
+            <span>前往<input type="text" value="1" class="input-pagination">页</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="addModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+              aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">新增咨询登记</h4>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="table">
+              <table>
+                <thead>
+                  <tr>
+                    <th colspan="5">基本信息</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="width:120px;">咨询单号</td>
+                    <td colspan="3"><input class="input-text" /> </td>
+                  </tr>
+                  <tr>
+                    <td class="require">咨询人姓名</td>
+                    <td><input class="input-text" /></td>
+                    <td class="require">与老人关系</td>
+                    <td>
+                      <select class="input-text">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="require">咨询方式</td>
+                    <td>
+                      <select class="input-text">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </td>
+                    <td class="require">咨询日期</td>
+                    <td><input class="input-text" /></td>
+                  </tr>
+                  <tr>
+                    <td class="require">联系电话</td>
+                    <td><input class="input-text" /></td>
+                    <td class="require">联系地址</td>
+                    <td><input class="input-text" /></td>
+                  </tr>
+                  <tr>
+                    <td class="require">咨询意向</td>
+                    <td>
+                      <select class="input-text">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </td>
+                    <td class="require">媒介渠道</td>
+                    <td>
+                      <select class="input-text">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table>
+                <thead>
+                  <tr>
+                    <th colspan="5">老人信息</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td style="width:120px;" class="require">老人姓名</td>
+                    <td><input class="input-text" /> </td>
+                    <td class="require">性别</td>
+                    <td>
+                      <select class="input-text">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>老人年龄</td>
+                    <td><input class="input-text" /></td>
+                    <td>老人自理情况</td>
+                    <td><input class="input-text" /></td>
+                  </tr>
+                  <tr>
+                    <td>老人住址</td>
+                    <td colspan="3"><input class="input-text" /></td>
+                  </tr>
+                  <tr>
+                    <td>备注</td>
+                    <td colspan="3" class="textarea"><textarea class="input-textarea" rows="3"></textarea></td>
+                  </tr>
+                  <tr>
+                    <td colspan="5">登记人：松江院IT</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="formbtn formbtn-primary">新增保存</button>
+          <button type="button" class="formbtn formbtn-primary" data-dismiss="modal">取消保存</button>
+        </div>
       </div>
     </div>
   </div>
@@ -351,7 +674,7 @@
   <script src="./dist/js/bootstrap-datepicker.min.js"></script>
   <script src="./dist/js/ovio.js"></script>
   <script>
-    !function (a) { a.fn.datepicker.dates["zh-CN"] = { days: ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"], daysShort: ["周日", "周一", "周二", "周三", "周四", "周五", "周六"], daysMin: ["日", "一", "二", "三", "四", "五", "六"], months: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"], monthsShort: ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"], today: "今天", monthsTitle: "选择月份", clear: "清除", format: "yyyy-mm-dd", titleFormat: "yyyy年mm月", weekStart: 1 } }(jQuery);
+    // $.fn.datepicker.dates["zh-CN"] =
   </script>
 </body>
 

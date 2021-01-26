@@ -188,13 +188,13 @@
   position: absolute;
   right: 0;
 }
-.sidebar-mini .sw {
+.sidebar-mini .box.sw {
   padding-right: 200px;
   padding-top: 14px !important;
   padding-bottom: 14px !important;
   position: relative;
 }
-.sidebar-mini .sw .navigation {
+.sidebar-mini .box.sw .navigation {
   position: absolute;
   right: 0;
   width: 200px;
@@ -205,7 +205,7 @@
   justify-content: center;
   align-items: center;
 }
-.sidebar-mini .sw .navigation div {
+.sidebar-mini .box.sw .navigation div {
   width: 42px;
   height: 30px;
   background-color: #5E5E5E;
@@ -213,14 +213,14 @@
   line-height: 30px;
   color: #ffffff;
 }
-.sidebar-mini .sw .navigation div:focus {
+.sidebar-mini .box.sw .navigation div:focus {
   border: none;
   outline: none;
 }
-.sidebar-mini .sw .navigation div.swiper-button-disabled {
+.sidebar-mini .box.sw .navigation div.swiper-button-disabled {
   background-color: #ADAAAA;
 }
-.sidebar-mini .sw .p-card {
+.sidebar-mini .box.sw .p-card {
   border: 1px solid #EBEBEB;
   padding: 10px;
   display: flex;
@@ -228,22 +228,22 @@
   align-items: center;
   line-height: 30px;
 }
-.sidebar-mini .sw .p-card img {
+.sidebar-mini .box.sw .p-card img {
   border-radius: 8px;
   margin-right: 10px;
 }
-.sidebar-mini .sw .p-card .name {
+.sidebar-mini .box.sw .p-card .name {
   font-size: 20px;
   font-weight: 400;
   color: #363636;
 }
-.sidebar-mini .sw .p-card .birt,
-.sidebar-mini .sw .p-card .address {
+.sidebar-mini .box.sw .p-card .birt,
+.sidebar-mini .box.sw .p-card .address {
   font-size: 18px;
   font-weight: 400;
   color: #7F7F7F;
 }
-.sidebar-mini .sw .p-card .address {
+.sidebar-mini .box.sw .p-card .address {
   font-size: 16px;
 }
 @media screen and (max-width: 1700px) {
