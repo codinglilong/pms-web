@@ -2,6 +2,44 @@
 .getAxisX(@num,@axiosY){
   background: url('../../img/common/menu-icon.png') @axisX*@num if((@axiosY)20px,0);
 }
+#bundle(@color,@headerbg) {
+  header{
+    background-color: @color;
+    .open .active{
+      background-color: @headerbg;
+    }
+  }
+  .sidebar .treeview-menu li{
+    &.active{
+      background-color: @color;
+    }
+    &:hover{
+      background-color: @color;
+    }
+  }
+  .card .top .title::before{
+    background-color: @color;
+  }
+}
+ul{
+  padding: 0;
+  li{
+    list-style: none;
+  }
+}
+
+.skin-blue{
+  #bundle(#2E69EB,#2759c8)
+}
+.skin-red{
+  #bundle(#FF4C69,#d94259)
+}
+.skin-green{
+  #bundle(#4AD675,#40b664)
+}
+.skin-yellow{
+  #bundle(#FFA53A,#d98c31)
+}
 .sidebar-mini{
   .wrapper{
     min-height: 100vh !important;
@@ -12,7 +50,6 @@
       justify-content: space-between;
       align-items: center;
       line-height: 60px;
-      background-color: #2E69EB;
       padding: 0 20px;
       color: #FFFFFF;
       position: relative;
@@ -177,6 +214,43 @@
             left: 40px;
           }
         }
+        
+          
+        &-skin{
+          position: relative;
+          .msg-info{
+            position: relative;
+            padding:0 20px;
+            cursor: pointer;
+          }
+          ul.skin{
+            padding: 5px;
+            display: flex;
+            margin-bottom: 0;
+            li{
+              margin: 5px;
+              width: 42px;
+              height: 42px;
+              border-radius: 6px;
+              &:nth-child(1){
+                background-color: #3B6CFF;
+              }
+              &:nth-child(2){
+                background-color: #FF4D69;
+              }
+              &:nth-child(3){
+                background-color: #4BD675;
+              }
+              &:nth-child(4){
+                background-color: #FFA53A;
+              }
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      .ml-5{
+        margin-left: 5px;
       }
       .ml-8{
         margin-left: 8px;
@@ -197,7 +271,9 @@
       position: relative;
       span{
         position: absolute;
-        right:20 ;
+        right:20px;
+        color: #2E69EB;
+        cursor: pointer;
       }
     }
   }
@@ -338,10 +414,12 @@
     }
     .treeview-menu {
       li{
-        padding-left: 30px;
-        &.active{
-          background-color: #2E69EB;
+        &:hover{
+          a{
+            color: #ffffff !important;
+          }
         }
+        padding-left: 30px;
       }
     }
   }

@@ -22,7 +22,7 @@
 
 </head>
 
-<body class="sidebar-mini">
+<body class="sidebar-mini skin-blue">
   <div class="wrapper">
     <!-- 头部开始 -->
     <header>
@@ -66,7 +66,7 @@
           </div>
         </div>
         <!-- 用户下拉结束 -->
-
+        <!-- 消息 -->
         <div class="header-right-msg">
           <div class="msg-info active" data-toggle="dropdown">
             <span class="icon-msg">
@@ -85,6 +85,24 @@
               </li>
               <li><a href="#"><img src="./dist/img/common/jb-icon04.png" alt="图标">投诉管理<span class="red">+1</span></a>
               </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 换肤 -->
+        <div class="header-right-skin">
+          <div class="msg-info active" data-toggle="dropdown">
+            <span class="icon-msg">
+              <img src="./dist/img/common/a-icon02.png" alt="图标" />
+            </span>
+            <span class="caret ml-5"></span>
+          </div>
+          <div class="dropdown-menu dropdown" aria-labelledby="dLabel">
+            <ul class="skin">
+              <li data-skin="skin-blue"></li>
+              <li data-skin="skin-red"></li>
+              <li data-skin="skin-green"></li>
+              <li data-skin="skin-yellow"></li>
             </ul>
           </div>
         </div>
@@ -890,6 +908,12 @@
         prevEl: '.button-next',
       },
     });
+
+    $(".skin li").click(function () {
+      var skin = $(this).data("skin");
+      $("body").attr("class", "sidebar-mini " + skin)
+    });
+
   </script>
 </body>
 

@@ -48,15 +48,28 @@
   font-size: 14px;
   font-weight: 400;
   color: #333333;
+  position: relative;
+}
+.content-wrapper .check-list .header label {
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-weight: 400;
+  color: #2E69EB;
+}
+.content-wrapper .check-list .header label input {
+  vertical-align: -2px;
 }
 .content-wrapper .check-list .check-box {
   margin-bottom: 20px;
 }
-.content-wrapper .check-list label {
+.content-wrapper .check-list .check-box label {
   display: inline-block;
   width: 150px;
+  cursor: pointer;
 }
-.content-wrapper .check-list label input {
+.content-wrapper .check-list .check-box label input {
   margin-right: 5px;
   vertical-align: -2px;
   margin-top: 20px;

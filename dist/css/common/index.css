@@ -1,3 +1,69 @@
+ul {
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+.skin-blue header {
+  background-color: #2E69EB;
+}
+.skin-blue header .open .active {
+  background-color: #2759c8;
+}
+.skin-blue .sidebar .treeview-menu li.active {
+  background-color: #2E69EB;
+}
+.skin-blue .sidebar .treeview-menu li:hover {
+  background-color: #2E69EB;
+}
+.skin-blue .card .top .title::before {
+  background-color: #2E69EB;
+}
+.skin-red header {
+  background-color: #FF4C69;
+}
+.skin-red header .open .active {
+  background-color: #d94259;
+}
+.skin-red .sidebar .treeview-menu li.active {
+  background-color: #FF4C69;
+}
+.skin-red .sidebar .treeview-menu li:hover {
+  background-color: #FF4C69;
+}
+.skin-red .card .top .title::before {
+  background-color: #FF4C69;
+}
+.skin-green header {
+  background-color: #4AD675;
+}
+.skin-green header .open .active {
+  background-color: #40b664;
+}
+.skin-green .sidebar .treeview-menu li.active {
+  background-color: #4AD675;
+}
+.skin-green .sidebar .treeview-menu li:hover {
+  background-color: #4AD675;
+}
+.skin-green .card .top .title::before {
+  background-color: #4AD675;
+}
+.skin-yellow header {
+  background-color: #FFA53A;
+}
+.skin-yellow header .open .active {
+  background-color: #d98c31;
+}
+.skin-yellow .sidebar .treeview-menu li.active {
+  background-color: #FFA53A;
+}
+.skin-yellow .sidebar .treeview-menu li:hover {
+  background-color: #FFA53A;
+}
+.skin-yellow .card .top .title::before {
+  background-color: #FFA53A;
+}
 .sidebar-mini .wrapper {
   min-height: 100vh !important;
   background-color: #F2F2F2;
@@ -8,7 +74,6 @@
   justify-content: space-between;
   align-items: center;
   line-height: 60px;
-  background-color: #2E69EB;
   padding: 0 20px;
   color: #FFFFFF;
   position: relative;
@@ -178,6 +243,41 @@
   top: 12px;
   left: 40px;
 }
+.sidebar-mini .wrapper header .header-right-skin {
+  position: relative;
+}
+.sidebar-mini .wrapper header .header-right-skin .msg-info {
+  position: relative;
+  padding: 0 20px;
+  cursor: pointer;
+}
+.sidebar-mini .wrapper header .header-right-skin ul.skin {
+  padding: 5px;
+  display: flex;
+  margin-bottom: 0;
+}
+.sidebar-mini .wrapper header .header-right-skin ul.skin li {
+  margin: 5px;
+  width: 42px;
+  height: 42px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.sidebar-mini .wrapper header .header-right-skin ul.skin li:nth-child(1) {
+  background-color: #3B6CFF;
+}
+.sidebar-mini .wrapper header .header-right-skin ul.skin li:nth-child(2) {
+  background-color: #FF4D69;
+}
+.sidebar-mini .wrapper header .header-right-skin ul.skin li:nth-child(3) {
+  background-color: #4BD675;
+}
+.sidebar-mini .wrapper header .header-right-skin ul.skin li:nth-child(4) {
+  background-color: #FFA53A;
+}
+.sidebar-mini .wrapper header .ml-5 {
+  margin-left: 5px;
+}
 .sidebar-mini .wrapper header .ml-8 {
   margin-left: 8px;
 }
@@ -199,7 +299,9 @@
 }
 .sidebar-mini .content-wrapper .bread span {
   position: absolute;
-  right: 20 ;
+  right: 20px;
+  color: #2E69EB;
+  cursor: pointer;
 }
 .sidebar-mini .sidebar li:first-child img {
   cursor: pointer;
@@ -354,8 +456,8 @@
 .sidebar-mini .sidebar .treeview-menu li {
   padding-left: 30px;
 }
-.sidebar-mini .sidebar .treeview-menu li.active {
-  background-color: #2E69EB;
+.sidebar-mini .sidebar .treeview-menu li:hover a {
+  color: #ffffff !important;
 }
 .sidebar-mini .formbtn {
   min-width: 70px;

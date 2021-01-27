@@ -19,7 +19,7 @@ function styles(cb) {
 function server(cb) {
   browserSync.init({
     server: {
-      baseDir: './'
+      baseDir: './',
     }
   })
   cb();
